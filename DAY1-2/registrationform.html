@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <table>
+        <form action="/register" method="POST">
+        <tr>
+            <td><label for="name">name: </label></td>
+            <td><input type="text" name="nm" id="name"></td>
+        </tr>
+        <tr>
+            <td><label for="Address">Address: </label></td>
+            <td> <textarea name="addr" id="addr" cols="25" rows="5"></textarea></td>
+        </tr>
+        <tr>
+            <td><label for="Date Of Joining">Date of Joining: </label></td>
+            <td><input type="date" name="dt" id="dt" min="2000-04-01" max="2024-06-01"></td>
+        </tr>
+        <tr>
+            <td> <label for="skills">Skills: </label></td>
+            <td><input type="checkbox" name="skills" id="c++" value="c++"><label for="c++">C++</label>
+            
+            <input type="checkbox" name="skills" id="Java" value="Java"><label for="Java">Java</label>
+
+            <input type="checkbox" name="skills" id="Database" value="Database"><label for="Database">Database</label>
+
+            <input type="checkbox" name="skills" id="Python" value="Python"><label for="Python">Python</label>
+
+            <input type="checkbox" name="skills" id="Linux" value="Linux"><label for="Linux">Linux</label>
+
+            <input type="checkbox" name="skills" id="Perl" value="Perl"><label for="Perl">Perl</label>
+            
+            </td>
+        </tr>
+        
+        <tr>
+            <td><label for="Degree">Degree: </label></td>
+            <td><input type="radio" name="Degree" id="BE" value="BE"><label for="BE">BE</label></td>
+            
+            <td><input type="radio" name="Degree" id="B.Tech" value="PhD"><label for="B.Tech">B.Tech</label></td>
+
+            <td><input type="radio" name="Degree" id="PhD" value="PhD"><label for="PhD">PhD</label></td>
+
+        </tr>
+        
+        <tr>
+            <td><label for="profile">profile</label></td>
+            <td><input type="file" name="profile" id="profile"></td>
+        </tr>
+
+        <tr>
+            <td>City: </td>
+            <td><select id="city" name="city">
+                <option value="Pune">Pune</option>
+                <option value="Mumbai">Mumbai</option>
+                <option value="Banglore">Banglore</option>
+                <option value="Delhi">Delhi</option>
+            </select></td>
+        </tr>
+
+        <tr>
+            <td></td>
+            <td><button type="submit" name="btn" id="register">Register Me</button></td>
+            <td><button type="reset" name="btn" id="Cancel">Cancel</button></td>
+        </tr>
+    </form>
+    </table>
+</body>
+</html>

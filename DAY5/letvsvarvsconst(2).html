@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!--Internal Javascript-->
+    <script>
+        //Therre are 3 types of variavles in Javascript 1.var 2.let 3.const
+        //Var variable is global or functional scoped, allows duplicate declaration and hosting variable declaration
+        var a=12;
+        var a="Hello World!!";
+
+        //Let variable is block scoped, does NOT allow duplicate declaration as well as hoisting variable declaration
+        let b=34;
+
+        //Function declaration
+        function f1()
+        {
+            var a=45;
+            document.write("Inside function f1 : a= ",a);
+            if(a>35)
+            {
+                var x=35;
+                let y=45;
+                document.write("Inside if-block : x= ",x," y= ",y,"\n");
+            }
+            document.write("Outside if : x= ",x,"\n");
+            //document.write("Outside if : y= ",y); This will give error as y variable type is LET and it is only block scoped//
+        }
+        f1()//calling a function f1
+        document.write("Outside function : a= ",a,"\n");
+        document.write("Outside function and trying to access hosting variable var : k= ",k);
+        var k=34;//flag variable declaration will occur here as the variable type is var
+        //document.write("Outside function : x1= ",x1);
+        //Above statement will give error as the Variable type is LET and it does not allow hosting variable declaration
+        let x1=43;
+
+        const c=300;
+        //c=3; error as c is constant
+
+    </script>
+</body>
+</html>

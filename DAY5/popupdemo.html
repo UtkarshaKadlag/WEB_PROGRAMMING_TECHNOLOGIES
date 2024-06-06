@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //There are three type of pop-up buttons
+        //1.Alert : is used to display only the information to the user, and only 1 ok button//
+        alert("Hello World!!");
+
+        //2.Confirm : It contains ok and cancel button
+        var ans=confirm("Do you wan to continue?");
+        if(ans)
+        {
+            document.write("You clicked on ok!!");
+        }
+        else
+        document.write("You clicked on cancel!!");
+
+        //3.Prompt : Box with textbox useful to accept one output from uer//
+        var name=prompt("Enter Name :");
+
+        //document.write() is used to display on browser window
+        //console.write() is used to display on console and is not visible to user
+        document.write("Name : "+name);
+        console.log("Name : "+name);
+    </script>
+</body>
+</html>

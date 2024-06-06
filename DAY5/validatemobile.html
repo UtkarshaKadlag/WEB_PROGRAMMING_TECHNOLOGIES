@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        const validatemob=function()
+        {
+            var mob=document.getElementById("mobile").value;
+            if(isFinite(mob) && mob.length==10)
+            {
+                document.getElementById("errormob").innerHTML="valid mobile";
+            }
+            else
+            {
+                document.getElementById("errormob").innerHTML="invalid mobile";
+            }
+        }
+    </script>
+</head>
+<body>
+    <form>
+        Mobile Number: <input type="text" name="mobile" id="mobile">
+        <span id="errormob"></span><br>
+        <button type="button" name="btn" id="btn" onclick="validatemob()">Ckeck Mobile</button>
+    </form>
+</body>
+</html>
